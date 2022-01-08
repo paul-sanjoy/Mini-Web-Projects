@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+body{
+  background-image: linear-gradient(90deg, white, grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.card{
+  background-color: blue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px black;
+  transform: translateX(400%);
+  transition: transform .3s ease;
+}
+
+.card:nth-of-type(even){
+  transform: translateX(-400%);
+}
+
+.card.visible {
+  transform: translateX(0);
+}

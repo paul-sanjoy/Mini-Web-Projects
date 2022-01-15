@@ -48,7 +48,8 @@ const setTime = () => {
     secondEl.style.transform = `translate( -50%, -100%) rotate(${scale(seconds, 0 ,59, 0, 360)}deg)`;
 
 
-    
+    timeEl.innerHTML = `${hours}:${minutes < 10 ? `0${minutes}` : minutes } ${amPm}`;
+    dateEl.innerHTML = `${daysName[day]} , ${monthsName[month]} <span class="circle">${date}</span>`;
 
 
 }

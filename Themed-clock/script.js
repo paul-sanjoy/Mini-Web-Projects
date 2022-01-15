@@ -9,3 +9,14 @@ const daysName = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Frida
 const monthsName = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
     "Oct", "Nov", "Dec"
 ];
+
+toggle.addEventListener("click", function (event) {
+    const html = document.querySelector("html");
+    if (html.classList.contains("dark")) {
+        html.classList.remove("dark");
+        event.target.innerHTML = "Dark mode";
+    } else {
+        html.classList.add("dark");
+        event.target.innerHTML = "Light mode";
+    }
+})

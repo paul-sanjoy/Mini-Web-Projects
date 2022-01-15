@@ -43,3 +43,20 @@ body {
     top: 100px;
     cursor: pointer;
 }
+
+.toggle:focus {
+    outline: none;
+}
+
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
